@@ -1,0 +1,128 @@
+
+=========
+AWS RDS
+========
+
+Database : It is a software which is used to store the data permanently
+
+=> We have several databases in the market
+
+		- Oracle
+		- MySQL
+		- SQLServer
+		- PostGres
+
+=> Every application will use database to store the data.
+
+=> Database will store the data in tables format.
+
+=> Table contains rows and columns
+
+==================================
+Challenges with On-Prem Database
+==================================
+
+1) Purchase DB Server License
+
+2) Install DB Server s/w
+
+3) Security
+
+4) Network
+
+5) Backup
+
+6) Administration
+
+=> To overcome above problems we will use Cloud Database.
+
+=> AWS RDS service providing cloud databases
+
+=> RDS stands for relational database service in AWS cloud
+
+=> RDS is used to create & manage relational databases
+
+=> RDS is a fully managed service in AWS cloud.
+
+=> RDS works based on "pay as you go" model.
+
+=============
+RDS Lab Task
+=============
+
+Step-1 : Create MySQL DB Server using RDS
+
+Step-2 : Enable MySQL :: 3306 port number in Security Group Inbound Rules
+
+Step-3 : Test MySQL DB Connection using MySQL Workbench software (client s/w)
+
+Step-4 : Execute some SQL queries for practice (optional)
+
+Step-5 : Delete RDS instance to avoid billing.
+
+============================
+MySQL DB Creation Steps
+=========================
+
+Creation method : Standard Create
+
+Engine Type : MySQL
+
+Templates: Free Tier
+
+DB instance identifier : ashokit-db-instance
+
+public access : Yes
+
+Database options : Initial DB name : sbidb
+
+====================
+Database Details
+====================
+
+DB Endpont
+DB username
+DB password
+DB port
+
+
+=============
+SQL Queries
+=============
+
+=> Execute below sql queries using workbench
+
+show databases;
+use sbidb;
+show tables;
+
+## table creation query
+create table emp(
+	eid int(10), 
+	ename varchar(100), 
+	esal int(10)
+);
+
+## retrieve records query
+select * from emp;
+
+## insert query
+insert into emp values(1, 'john', 1000);
+insert into emp values(2, 'smith', 2000);
+
+select * from emp;
+
+
+#### note: once practice completed, delete RDS instance ######
+
+
+
+
+
+
+
+
+
+
+
+

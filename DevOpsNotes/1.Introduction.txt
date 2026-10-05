@@ -1,0 +1,577 @@
+===================
+DevOps with AWS
+===================
+
+Whatsapp Group Link : https://chat.whatsapp.com/GgMKUMgX7Zv6ln8w53QFHn
+
+
+Code : 18-DevOps
+
+Duration : 3 to 4 Months
+
+Trainer : Mr. Ashok (11+ Yrs Exp)
+
+Timings: 8:00 PM to 9:30 PM (IST)
+
+Class Mode : Online
+
+Monday to Saturday 
+
+Topic wise soft copy notes will be provided
+
+Every Day Class video will be provided for revision (1 year access) - 24 hours
+
+Whatsapp group will be created for discussion
+
+Course Fee : 18,000 INR (No EMI)
+
+
+===============
+What is DevOps
+===============
+
+DevOps = Development + Operations
+
+=> DevOps is a culture/process in IT industry to simpliy application delivery process to client with high quality.
+
+=> The main aim of DevOps to establish colloboration between Development Team & Operations Team
+
+=========================
+Development Team Roles
+=========================
+
+1) Requirements Gathering
+
+2) Requirements Analysis
+
+3) Design 
+
+4) Development (Coding)
+
+5) Unit Testing
+
+6) Code Integration
+
+7) Bug Fixing
+
+
+==================================
+DevOps Team Roles & Responsibilities
+==================================
+
+1) Understand Infrastructure requirement
+
+			- Machines / Servers
+			- Network
+			- Storage
+			- Backup
+			- Security
+
+2) Infrastructure Creation in Cloud (AWS) (Terraform)
+
+3) Configuration Management (Ansible)
+
+		Ex: install java s/w in 10 machines
+			copy file from one machine to another machine
+
+4) Working with Linux Machines Server
+
+5) Work with source code repository servers (GIT HUB / BitBucket)
+
+6) Working Docker for Containerization (simplify app execution process)
+
+		Containerization = app code + app dependencies
+
+7) Manage Containers using Kubernetes (Orchestration)
+
+		Ex: Create / Delete / Scale Up / Scale Down
+
+8) Automate build & deployment using Jenkins CI CD pipelines
+
+			- Create pipeline
+			- Execute pipeline
+			- Monitor pipeline
+
+9) Infra Monitoring & Application Monitoring
+
+
+==========================================
+Skills Required To Become DevOps Enginner
+==========================================
+
+1) Software Development Life Cycle (SDLC)
+
+		- Waterfall Model
+		- Agile Model
+		- Scrum Framework
+
+2) Application Architecture
+
+			- Front End & Tech stack
+			- Back End & Tech stack
+			- Database & Types
+
+3) Linux OS (Commands)
+
+4) Shell Scripting (automate routine work)
+
+5) Cloud Computing (AWS)
+
+			- EC2 (Virtual Machines)
+				- LBR (Load Balancing)
+				- ASG (Auto Scaling)
+				- EBS (Block Storage)
+			- S3 (Unlimited Stroage)
+			- RDS (Relational Database)
+			- IAM (Users & Groups Management)
+			- VPC (virtual private cloud)
+			- EKS (Kubernetes Cluster)
+			- Route 53 (Domain Mapping)
+			- Cloud Watch (Monitoring)
+			- SNS (Simple Notification Service)
+				.... etc
+
+6) DevOps Tools
+
+		- Terraform (To create infrastructure in cloud)
+		- Ansible (configuration mgmt)
+		- Maven (Build Tool)
+		- Git Hub (Version Control)
+		- Tomcat (Webserver to run app)
+		- SonarQube (Code Review)
+		- Nexus (Artifactory Server)
+		- Docker (Containerazation)
+		- Kubernetes (Orchestration)
+		- Jenkins (CI CD) (automate build & deployment)
+		- Promethues & Grafana (Servers Monitoring)
+		- ELK/EFK (App log monitoring)
+		- JIRA (Project Management)
+
+
+==============
+Our Road Map
+==============
+
+1) DevOps Introduction
+
+2) Linux OS + Scripting
+
+3) AWS Cloud
+
+4) DevOps Tools
+
+5) Projects Setup
+
+6) Interview Guide
+
+
+Today's Task : Create free tier account in AWS Cloud
+
+Reference : https://www.youtube.com/watch?v=xi-JDeceLeI
+
+
+===============================
+What is Software Project ?
+==============================
+
+=> Collection of software programs is called as Software Project
+
+=> To develop software programs we will use programming languages
+
+	Ex: C, C++, Java, Python, PHP, C#....
+
+==================================
+Why to develop software project ?
+==================================
+
+=> Software projects are used to reduce human efforts and simplify humans life
+
+
+			1) IRCTC for train tickets booking
+
+			2) Gpay, phonepay, paypal, Net Banking
+
+			3) Amazon, flipkart for online shopping
+
+			4) Bookmyshow to book movie tickets
+
+			5) Swiggy and Zomoto for food orders
+
+
+============================
+Types of software projects
+===========================
+
+1) Stand-alone / desktop application
+
+2) Web Applications
+
+3) Distributed applications
+
+4) Mobile Applications
+
+
+=> Desktop applications will execute only in one system (only one user can access)
+
+		Ex: OS, Calculator, Notepad
+
+
+=> Web Applications can be accessed by multiple users at a time with internet
+
+			( C 2 B )
+
+		Ex: gmail, youtube, facebook, linkedin....		
+
+
+=> If one application is communicating with another application for re-using business server then those are called as Distributed applications (Webservices).
+
+				(B 2 B)
+
+		Ex:     Make My Trip ---------> IRCTC
+
+				Gpay ---------------> SBI Bank App
+
+				Passport ------------> AADHAR
+
+
+=> Mobile applications are used to run in mobiles
+
+		Ex: Whatsapp, Instagram, FB messenger ....
+
+
+###### Note: Some project are available for both web and mobile also	####
+
+
+==========================
+Application Architecture
+==========================
+
+=> Application architecture contains below 3 components
+
+			1) Frontend (Presentation Layer)
+
+			2) Backend (Business Logic)
+
+			3) Database (Storage)
+
+
+=> Front end contains user interface (presentation layer)
+
+	Front end technologies : HTML + CSS + JS + BS + Angular / React JS
+
+=> Backend contains business logic
+
+	Backend technologies : Java / Python / Dot Net / Node JS...
+
+=> Database is used for storage
+
+	Databases : Oracle , MySQL, SQL Server, Mongo DB, Casandra...		
+
+========================
+Application Tech Stack
+========================
+
+App-1 : Angular + Java + Oracle
+
+App-2 : React JS + Java + Mongo DB
+
+App-3 : Angular + Python + MySQL
+
+App-4 : React JS + Dot Net + SQL Server
+
+App-5 : React JS + Node JS + Mongo DB
+
+===================================
+Application Architectural Patterns
+===================================
+
+1) Monolithic Architecture  (outdated)
+
+2) Microservices Architecture (Trending)
+
+
+=================================
+What is Monolithic Architecture
+=================================
+
+=> If we develop all functionalities in one single application then it is called as Monolithic Architecture.
+
+
+=> We have several drawbacks with Monolith Architecture
+
+1) Everything at once place
+2) Single Point Of Failure
+3) Burden on Server
+4) Maintenance is Difficult
+5) Re-Deploy Entire app
+
+=> To overcome these drawbacks, people are using Microservices Architecture.
+
+===============
+Microservices
+===============
+
+=> Small Services which are independtley deployable and executable.
+
+=> Every microservice will have limited functionality
+
+=> In one application we can have several microservices
+
+
+=> We have below advantages with Microservices
+
+
+a) Loosely coupled
+
+b) High Availability
+
+c) No need to re-deploy all apis
+
+d) Technology independence
+
+
+
+
+=================
+What is SDLC ?
+=================
+
+=> Software Development Lifecycle
+
+=> It represents how companies will develop one project
+
+=> In SDLC several phases will be available
+
+
+1) Requirements Gathering
+
+2) Analysis
+
+3) Design / Planning
+
+4) Development
+
+5) Testing
+
+6) Deployment & Delivery
+
+7) Maintenence / Support
+
+
+=> in SDLC we have several models
+
+1) Waterfall Model (outdated)
+
+2) Agile Model (Trending)
+
+
+====================
+Waterfall Model
+==================
+
+=> It is called as Linear model or sequence model
+
+=> After one stage completed then only we will move to next stage
+
+
+1) Requirements are fixed
+
+2) Duration fixed
+
+3) Budget fixed
+
+4) Client will see project at the end
+
+
+
+Note: If client don't like the delivered project then its big loss for client because already money wasted and time wasted.
+
+Note: This is suitable for small scale applications
+
+
+
+=============
+Agile Model
+=============
+
+
+=> In Agile, project development + testing + deployment is a continuous process.
+
+=> Agile is called as Iterative approach.
+
+=> We don't develop whole application at a time in agile model
+
+=> Project will be developed as multiple sprints
+
+=> For every sprint we will perform plan + design + develop + test + deliver
+
+=> Client invovlement will be there for every sprint
+
+
+1) Project requirements are not fixed
+
+2) Project budget is not fixed
+
+3) Project duration is not fixed
+
+==================
+Agile Terminology
+==================
+
+1) Backlog : Pending Tasks
+
+2) Sprint : Priority tasks we have planned for develivery 
+
+3) Scrum : Daily status call (15 to 20 mins)
+
+4) Retro : Review meeting on the sprint
+
+
+=========
+DevOps 
+=========
+
+DevOps = Development + Operations
+
+=> DevOps is a culture
+
+=> DevOps is a process
+
+=> DevOps is a set of practices
+
+=> DevOps is used to establish colloboration between Development Team & Operations Team
+
+=> The main aim of devops team is to make project delivery process simple & quick with high quality.
+
+=> Companies are adopting DevOps culture to speed up application delivery process.
+
+================
+7'C of DevOps
+================
+
+=> The below 7c's represents DevOps life cycle
+
+1) Continuous Planning
+
+2) Continuous Development
+
+3) Continous Integration
+
+4) Continous Testing
+
+5) Continous Deployment
+
+6) Continous Monitoring
+
+7) Continous Feedback
+
+=====================================
+DevOps Introduction Class Summary
+=====================================
+
+1) What is Software Project
+2) Why Software Project
+3) Types of software projects
+4) Application Architecture
+5) Application Tech Stack
+6) Monolithic Architecture
+7) Microservices Architecture
+8) What is SDLC & Phases
+9) What is Waterfall Model
+10) What is Agile model
+11) What is DevOps & Why DevOps ?
+12) DevOps Lifecycle
+13) DevOps Tools
+14) Roles & Responsibilities of DevOps Engineer
+15) Skills required to become DevOps engineer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

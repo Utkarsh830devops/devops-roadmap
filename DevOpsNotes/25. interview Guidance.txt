@@ -1,0 +1,276 @@
+
+
+======================================
+Self Introduction of DevOps engineer
+======================================
+
+Part-1 : Your Details (name, exp, role, company-name).
+
+Part-2 : Technical Skills.
+
+Part-3 : Your Projects.
+
+Part-4 : Roles & Responsibilities.
+
+
+=> Hi, I am Ashok having 4 years of exp as a DevOps Engineer with Aws cloud platform. 
+
+=> Currently i am working as sr. software engineer at TCS.
+
+=> Coming to my technical skills, i am having hands on exp with several devops tools like "Terraform + Ansible + Git + Maven + SonarQube + Nexus + Jenkins + Docker + K8S + ELK + Grafana + Promethues"
+
+=> Coming to AWS cloud i am having hands on exp with AWS cloud services like VPC, EC2, RDS, S3, IAM, Lambdas, Cloudwatch, SNS etc...
+
+=> I am having good exp with Linux machines...
+
+=> Currently I am working on two application 1 is Healh Insurance application and another one is Ecommerce application.
+
+=> Both applications are developed using Java Spring Boot and Angular.
+
+			Backend : Java Spring Boot with Microservices
+			Frontend : Angular
+			Database : AWS RDS (Oracle)
+
+=> Coming to my roles & responsibilities
+
+		- Creating infrastructure using Terraform
+		- Configuration mgmt using Ansible
+		- Managing source code repos (bitbucket)
+		- Environments Setup for testing (Dev, UAT, PILOT)
+		- Microservices containerization & Orchestration
+		- Jenkins CI CD pipelines creation & Monitoring
+		- Code Review using SonarQube
+		- Moniting & managing application and infrastructure
+
+
+=====================
+Projects To Mention
+=====================
+
+Project-1 : Health Insurance (HIS) ----> currently in testing phase
+
+Project-2 : E-Commerce (choose any one from below list)
+
+			a) www.milton.com
+
+			b) www.nykaa.com
+
+			c) www.decathlon.com
+
+			d) www.godrejinterio.com
+
+
+==========================================
+Day to day activities of DevOps Engineer
+==========================================
+
+=> First thing is, we need to check our official email inbox
+
+Note: If any action items are there, then we should reply to those email.
+
+=> Check Meetings scheduled for today and plan accordingly and attend the meetings as per schedule.
+
+=> Check JIRA dashboard (check stories assigned on your name)
+
+
+Note-1 : If stories not assigned on your name then check JIRA dashboard for pending stories and assign to your name and start working on that.
+
+Note-2 : If there is no task for you then immediatley update to your higher management (scrum master/ tech lead / manager).
+
+Note-3 : If no pending tasks then management may ask you to work
+below activities
+
+			1) Documentation
+
+			2) R & D
+
+			3) POC (proof of concept)
+
+			4) KT sessions
+
+=> Everyday we need to attend scrum call and we need to provide work updates to scrum master.
+
+		- Working on which story
+
+		- When it will be completed
+
+		- Any challenges to complete
+
+		- Any help required to complete
+
+		- Any blockers to complete
+
+============================================================
+What type of tasks will be assigned to DevOps team member ?
+============================================================
+
+1) Infrastructure Setup using Terraform
+
+2) Build New Environments for application
+
+			- DEV 
+			- SIT
+			- UAT
+			- PILOT
+			- PROD
+
+3) Source Code Repo creation
+
+4) Access Permissions for Repos (Read & Read + Write)	
+
+5) Configuration Management (Playbook creation)		
+
+6) Pipelines creation for CI CD
+
+7) Creating Monitoring dashboards
+
+8) Documents preparation
+
+9) Provide KT sessions to new team members
+
+10) In house trainings
+
+
+============================
+Don'ts in software company
+============================
+
+1) Don't discuss your salary details with your team members. Don't ask salary of team members.
+
+2) Don't send any "company/project/client" related docs to your personal emails.
+
+3) If you join with fake exp, don't tell to anyone in the company.
+
+4) Don't use social media websites in company provided laptop/system.
+
+5) Don't abscond from company.
+
+6) Don't join for dual jobs (moon lighting).
+
+Note: PF overlapping shouldn't happen.
+
+=========================
+Do's in software company
+=========================
+
+=> Maintain friendly relationship with your team members
+
+=> Setup one to one meeting with manager on monthly basis and discuss below things in the meeting
+
+		- Showcase your work
+		- Take feedback from manager
+		- Understand manager expectations
+		- discuss your roles & responsibilities
+		- any improvements required
+
+=> Prepare documentation of your work.
+
+=> Provide KT for new joinees.
+
+=> Research on new technologies or new tools related to your field.
+
+=> Conduct internal trainings in the company.
+
+=> Download "your payslips + hike letters + form-16 + exp letter" from HR portal.
+
+=> If you are planning for vacation (long leave) then inform to your higher management 30 days before and take approval through email.
+
+Note: If you are taking any un-planned leave or sick leave then drop a msg or mail to your team members and scrum master.
+
+====================
+Joining Formalities
+====================
+
+## 1) Pre-Joining Formalities
+
+	- After interview selection you will get offer letter with joining date
+
+	- We should accept offer letter by giving email confirmation.
+
+	- Before joining date we will get call or email with details regarding joining location and point of contact.
+
+## 2) On-Boarding Process
+
+	- Meet OnBoarding HR
+	- Submit required docs to HR dept
+	- Fill up employment documents and submit to HR dept
+	- Collect laptop from IT dept
+	- Collect ID card from badging section
+	- Collect salary account (you can use your existing account also)
+
+Note: We need to update salary account details in HR portal.
+
+	- Company will plan induction program for new joinees.
+	- Attend Induction program to understand company policies.
+
+## 3) Project Selection
+
+	- Meet RM team (Resource Manager)	
+	- RM will find Openings in the projects based on your profile
+	- RM will schedule project interview with project manager
+	- Attend project interview / client interview
+
+Note: If you got selected in project interview then you will be allocated to project. If you got rejected in interview then RM will find another project opening.	
+
+## 4) Project On-Boarding process
+
+		- You will get email regarding project confirmation
+
+		- Meet project manager
+
+		- Manager will explain the process and complete it
+
+		- Meet Team members
+
+		- Team provides KT for you
+
+		- Attend daily meetings to understand work culture
+
+		- Once KT completed, they will assign tasks for you....
+
+
+===================
+Exit Formalities
+===================
+
+=> After getting offer letter from new company, setup one to one meeting with manager and inform that you are planning to resign for current company.
+
+=> Submit Resign in the HR portal.
+
+=> HR team will send email regarding Notice period and last working date.
+
+Note: We need to serve notice period as per company norms.
+
+=> During notice period, provide KT for team members.
+
+=> Download all employment related docs and share to your personal email.
+		
+		- Payslips
+		- offer letter
+		- hike letters
+		- exp letter
+		- reliviing letter
+
+=> On last working date, submit all company related belongings 
+(ex : ID Card, Laptop, Headset....)	
+
+Note: Give lunch or dinner party for your team members on last working day.
+
+=> AFter exit, with in 30 days we will get Full and Final Settelment
+ (F & F) from the company.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
