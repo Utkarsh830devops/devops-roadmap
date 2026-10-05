@@ -1,0 +1,53 @@
+
+===================
+What is Dynamo DB
+===================
+
+
+=> Database is used to store the data permanentley
+
+=> We have 2 types of databases in the market
+
+		1) SQL Databases (Relational databases)
+
+			Ex: Oracle, MySQL, Postgres, SQL Server....
+
+		2) No-SQL Databases (Non-Relational databases)
+
+			Ex: Mongo DB, Dynamo DB ....
+
+=============
+SQL Database
+=============
+
+=> To store structured data with relationships we will use SQL databases.	
+
+	Ex: 
+
+			employee_data
+			book_data
+			student_data		
+
+=> In SQL databases data will be represented in the form Tables, Rows and columns.
+
+Note: To work with SQL databases we have AWS RDS.
+
+=================
+No-SQL Database
+=================
+
+=> If we want to deal with un-structured data then we will use No-SQL databases.
+
+=> In No-SQL databases, data will be represented in the form of key-value / json / documents
+
+Note: To work with No-SQL database we have "AWS Dynamo DB"
+
+===================
+What is Dynamo DB
+===================
+
+=> Amazon DynamoDB is a fully managed NoSQL database service offered by AWS.
+
+=> DynamoDB is a fully managed, key-value, and document database that delivers single-digit-millisecond performance at any scale.
+
+=> DynamoDB charges for reading, writing, and storing data in your DynamoDB tables.

@@ -1,0 +1,58 @@
+
+=================
+Infrastructure
+=================
+
+Servers (Machines)
+Databases
+Storage
+Network
+Security
+Backup
+
+
+=> On-Prem infrastructure (buy & manage & maintain)
+
+=> Below challenges will be there with on-prem infrastructure
+
+		1) Security
+
+		2) Scalability (increase or decrease based on demand)
+
+		3) Availability (24/7)
+
+		4) Network issues
+
+		5) Diaster Recovery
+
+
+================
+Cloud Computing
+================
+
+=> The process of delivering IT resources over internet with pay as you go pricing.
+
+=> Instead of we are purchasing, maintaining the IT resources we can take them for rent.
+
+=> The company which is providing IT resources is called as Cloud Provider.
+
+					Amazon ===> AWS
+
+					Microsoft ===> Azure
+
+					Google ===> GCP
+
+======================
+Today's assignments
+=====================
+
+1) Create Account in AWS Cloud
+
+Reference : https://www.youtube.com/watch?v=xi-JDeceLeI
+
+2) Launch Linux Machine in AWS cloud with Ec2
+
+Reference : https://www.youtube.com/watch?v=xi-JDeceLeI
+
+
+

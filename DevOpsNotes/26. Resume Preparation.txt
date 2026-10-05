@@ -1,0 +1,287 @@
+
+===================
+Resume Preparation
+===================
+
+## Section-1 : Contact Details (name + email + phno)
+
+Note: Recommended to use new email id and new phno.
+
+## Section-2 : Professional Summary (Expertise)
+
+## Section-3 : Experience summary
+
+            - Current Company (start-date to till date)
+            - Previous Company (start-date and end-date)
+
+Note: Fake exp ppl keep only one company. If we keep 2 companies then we should submit 2 companies employment documents.
+
+## Section-4 : Technical Skills
+
+      DevOps Tools :
+      AWS Services:
+      OS:
+
+Note: Don't add any tool or service which you don't know.
+
+## Section-5 : Projects Summary
+
+        - Duration
+        - Tech Environment (Tools & Services)
+        - Roles & Responsibilities
+
+## Note-1: We can say ecommerce projects from below list
+
+         1) www.nykaa.com
+         2) www.milton.in
+         3) www.decathlon.in
+         4) www.godrejinterio.com
+         5) www.bantia.in   
+
+## Note-2 : We can another project as health insurance system (HIS/IES) for USA state govt "Rhode Island".
+
+    Insurance Plans : Medicaid, Medicare, SNAP, CCAP, QHP etc..
+
+## Section-6 : Educational Qualifications
+
+        Experienced ppl : Add only highest qualification
+
+        Fresher : all qualifications like (SSC, Inter, Graduation)
+
+## Section-7 :: Declaration                
+
+================================
+How to show gap as experience
+================================
+
+2023 & 2024 Passedout => Fresher Resume
+
+2022 Passedout => 2.5 years gap => 2.5 yrs exp
+
+2021 Passedout => 3.5 Years gap => 3.5 yrs exp
+
+2020 Passedout => 4.5 years gap => 4 yrs exp
+
+2019 Passedout => 5.5 years gap => 4 yrs exp + 1 yr training
+
+2018 passedout => 6.5 years gap => 4 yrs exp + 2.5 yrs non IT exp
+
+======================================
+Documents Required To show Experience
+======================================
+
+1) Offer Letter
+
+2) Hike Letters
+
+3) Payslips (3 to 6 months)
+
+4) Bank Statments (6 months)
+
+5) UAN details
+
+6) Form 16 (tax)
+
+7) Experience Letter/Service Letter
+
+8) Reliving Letter
+
+==========================
+Don'ts in software company
+===========================
+
+1) Don't send any company related documents to personal email.
+
+2) Don't ask team member salary.
+
+3) If you got job with fake exp then don't reveal with anybody in the company.
+
+4) Don't use social media sites in company provided system.
+
+5) Don't abscond from the company.
+
+6) Don't miss daily project meetings.
+
+==========================
+Do's in software company
+==========================
+
+1) Maintain friendly relation with team
+
+2) Every month setup one to one meeting with your manager to discuss your work performance.
+
+      - showcase your work
+
+      - understand manager expectations
+
+      - Know your roles & responsibilities
+
+      - Take feedback
+
+3) Provide KT sessions for new team members
+
+4) Conduct internal trainings for team members
+
+5) Do some certifications
+
+    Ex: AWS Cloud certification, K8S certifcation
+
+=====================================
+Self Introduction of DevOps Engineer
+=====================================
+
+Part-1 : Your details (name, exp, role, company-name)
+
+Part-2 : Technical Skills
+
+Part-3 : Your Project(S)
+
+Part-4 : Roles & Responsibilities
+
+
+=> Hi, I am Ashok having total 3.5 years of exp as a devops engineer with AWS cloud platform and currently i am working as DevOps engineer with <company-name>.
+
+=> Coming to my technical skills, i am having hands on experience with serveral DevOps tools like terraform, ansible, git, sonar, nexus, docker, k8s, jenkins, elk etc..
+
+=> I am having experience with AWs cloud services like EC2, RDS, IAM, VPC, S3, EKS, CloudWatch , SNS etc..
+
+=> I am also having good experience with Linux VMs and Linux Commands.
+
+
+=> Coming to My project, i am working with Health Insurance System which is providing health and insurance plans to Rhode Island state citizens in USA.
+
+    Frontend : Angular
+    Backend : Java Spring Boot Microservices
+    Database : Oracle
+
+
+=> Coming to my roles & responsibilities
+
+    1) Create infrastructure in AWS Cloud using Terraform scripts
+
+    2) Configuration mgmt using Ansible playbooks
+
+    3) Managing source code repositories in bitbucket
+
+    4) User management bitbucket
+
+    5) Managing application environments (DEV, SIT, UAT and PROD)
+
+    6) Managing dockerfile and docker images
+
+    7) Creating k8s manifest files
+
+    8) CI CD pipelines creation and monitoring
+
+    9) Code Quality checking
+
+    10) Monitoring and managing application logs
+
+
+========================================================
+What are the day to day activities of DevOps engineer
+========================================================
+
+=> First thing we need to check is our official email inbox
+
+=> If required we need to provide replies for those emails.
+
+=> Check meetings scheduled for today and get ready for those meetings
+
+=> Check JIRA dashboard and work on the tasks which are assinged on your name.
+
+Note: If task is not assigned then check pending tasks and assign pending task to your name and start working on that. If no pending tasks available then inform to your lead/scrum master/manager regarding that.
+
+
+=> Join daily scrum calls and give work updates to scrum master
+
+        - working which story
+
+        - when it will be completed
+
+        - any challenges to complete it 
+
+        - any help required
+
+        - any blockers
+
+
+Note: If you are not able to join scrum call for today then send work updates to scrum master in email.
+
+==========================================================
+What kind of taks will be assigned to DevOps engineer ?
+===========================================================
+
+1) Infrastructure creation
+
+Ex: Setup EKS cluster, Setup SonarQube server, Setup Jenkins server..
+
+2) Write Ansible playbooks
+
+3) Setup New Environment (DEV/SIT/UAT/Prod) (servers setup)
+
+4) Source Code Repo creation
+
+5) Manage users & user permissions in repository
+
+6) Setup CI CD Pipeline for build and deployment.
+
+7) Monitoring application (Grafana, Promethues, ELK)
+
+8) POC (Proof Of Concept) (experiments)
+
+9) Documentation
+
+10) Provide KT sessions
+
+11) Conduct Internal training sessions
+
+
+
+
+
+==============================
+3 Tier Architecture Project
+==============================
+
+=> Application contains 3 layers
+
+        1) Database
+
+        2) Backend App
+
+        3) Frontend App
+
+
+=> Database is used to store the pemanently.
+
+=> Backend app contains business logic
+
+Ex : Amount debit, Amount credit, Send OTP, Send Email, Valid credentials....
+
+=> Frontend app contains presentation logic (user interface)
+
+
+
+## Step-1 : Setup MySQL Database in AWS cloud using RDS
+
+Note: Once RDS instance got created notedown below details
+
+        DB Endpoint :
+        DB Username : 
+        DB Password : 
+
+## Step-2 : Connect with RDS using MySQL Workbench and execute SQL queries to load data into database table.        
+
+## Step-3 : Configure Database properties in backend application 
+
+## Step-4 : Deploy backend application using JENKINS CI CD Pipeline with below DevOps tools
+
+        a) Git Hub
+        b) Maven
+        c) Docker
+        d) K8S Deployment
+
+## Step-5 : Access Backend API URL and test it (working or not)
+
+

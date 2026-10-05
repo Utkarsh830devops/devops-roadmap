@@ -1,0 +1,237 @@
+
+==========
+AWS Cloud
+=========
+
+1) What is Cloud & Why
+2) Cloud Service Models
+3) Cloud Providers
+4) AWS Introduction
+5) AWS Services Overview
+6) Regions & AZ's
+
+7) EC2 (Elastic Compute Cloud)
+8) EBS (Elastic Block Store + Volumes + Snapshots )
+9) Load Balancer
+10) Auto Scaling
+11) S3 (Simple Storage Service)
+12) RDS (Relational Database Service)
+13) EFS (Elastic File System)
+14) IAM (Identity & Access Mgmt)
+15) VPC (Virtual Private Cloud)
+16) Cloud Formation 
+18) AWS CLI
+19) Elastic Beanstack 
+20) AWS Lambdas (Serverless computing)
+21) EKS (Elastic Kubernetes Service)
+22) Route 53 (DNS)
+23) Cloud Watch
+24) SNS
+25) Billing Overview
+
+
+=========================
+What is Infrastructure ?
+=========================
+
+=> The resources required to run our company / Project
+
+ Ex: Machines, Network, Storage, Database, Monitoring etc...
+
+=> We can maintain infrastructure in 2 ways
+
+				1) On-Prem infrastructure
+
+				2) Cloud Infrastrcture
+
+==================================
+What is On-Prem Infrastructure ?
+==================================				
+
+=> On-Prem means we need to purchase and we need to maintain our resources
+
+=> We have several challenges with On-Prem infrastructure
+
+				- Lot of cost
+				- Scalability issue
+				- Availability issue
+				- Security issue
+				- Network issues etc...
+
+=> To overcome the problems of on-prem infrastructure companies are preferring Cloud Infrastructure.
+
+==========================
+What is Cloud Computing?
+===========================
+
+=> The process of delivering IT resources over the internet on-demand basis with "Pay As You Go" Model is called as Cloud Computing.
+
+=> We have below advantages with Cloud Computing....
+
+				- Pay as you go
+				- Less Cost
+				- Scalability
+				- Availability
+				- Security
+				- Backup etc...
+================
+Cloud Providers
+================
+
+1) Amazon => AWS
+
+2) Microsoft => Azure
+
+3) Google => GCP
+
+4) Salesforce
+
+5) Ali Baba.....
+
+======================
+Cloud Service Models
+======================
+
+=> We have 3 types of cloud service models
+
+1) IAAS : Infrastructure as a service
+
+2) PAAS : Platform as a service
+
+3) SAAS : Software as a service
+
+
+=================
+What is SaaS
+=================
+
+-> Software as a service
+
+-> Cloud Provider will give their application to run our business
+
+	Ex: Zoom, Google Drive, Dropbox, 
+
+-> Application + Infrastructure + Platform - will be maintained by provider.
+
+=============
+What is PaaS
+=============
+
+-> Platform as a Service
+
+-> Provider will give ready made platform to run our application
+
+-> We need to take care of our application, provider will take care of infrastructure and platform.
+
+	Ex: AWS Elastic Beanstack
+
+==============
+What is IaaS
+==============
+
+-> Infrastructure as a Service
+
+-> Provider will give only infrastructure
+	
+	Ex: machines, network, storage...
+
+-> We need to take care of platform and application
+
+
+
+
+===========
+AWS Cloud
+==========
+
+=> AWS stands for Amazon webservices
+
+=> AWS providing cloud services from 2006 onwards
+
+=> 190+ countries using AWS cloud services to run their businesses
+
+=> AWS works based on Pay as you go model......
+
+=> AWS having global infrastructure
+
+			- Regions (33)
+
+			- Availability Zones (105)
+
+=> Region means geographical location (33 regions)
+
+=> AZ means Data Center (Server Room)
+
+Note: In One Region multiple AZs will be there
+
+			India => Mumbai + Hyd
+
+			=> Mumbai having 3 AZ (2016)
+			=> Hyd having 3 AZ (2022)
+
+Note: Its always recommended to select nearest Region to create infrastructure.
+
+Note: We are using AWS free tier account (some services are free.)
+
+Note: If we use any paid service then bill be generated. AWS will not deduct bill amount from our card.
+
+=> AWS will send reminders for bill payment. If we don't pay bill then our AWS account will suspended.
+
+Note: We can request AWS support team to make bill amount as zero for 1 or 2 times.
+
+===============
+AWS Services
+===============
+
+=> We have 200+ Services.....
+
+
+1) EC2  : To Create Virtual Machines (Hourly Basis)
+
+2) EBS  : Storage (Hard Disc, SSD) ( 16 TB )
+
+3) Load Balancer : To distribute load
+
+4) Auto Scaling : Adjust capacity based on demand
+
+5) S3 : Unlimited Storage (files)
+
+6) RDS : Relational Database Service
+
+7) EFS : Elastic File System (shared file system)
+
+8) IAM : Identity & Access Mgmt
+
+9) VPC : Virtual Private Cloud (Networking)
+				
+				- IP
+				- Subnets
+				- Route Tables
+				- IGW
+				- NATGW
+				- VPC Peering
+				- NACLs
+
+10) Cloud Formation : Infrastructure as a code => Terraform
+
+11) AWS CLI : Command Line Interface
+
+12) Elastic Beanstack : Platform as a service
+
+13) AWS Lambdas : Serverless computing (Run app without thinking abt servers)
+
+14) EKS : Elastic Kubernetes Service (The Trusted - K8S cluster)
+
+15) Route 53 : Domain Mapping (www.gmail.com, www.facebook)
+
+16) Cloud Watch : Monitoring Service
+
+17) SNS : Simple Notification Service (to send alerts)
+
+18) Billing Overview
+
+
+
+
+
+

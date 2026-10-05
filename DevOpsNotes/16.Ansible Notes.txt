@@ -1,0 +1,541 @@
+
+==========================
+Configuration Management 
+==========================
+
+=> Installing required softwares in the machines
+
+=> Copy required files from one machine to another machine
+
+=> OS Patching/Updates
+
+============================================
+Problems with Manual Configuration Mgmt
+============================================
+
+1) Time Taking Process
+
+2) Repeated work
+
+3) Human Mistakes
+
+Note: To overcome these problem we are going to automate configuration management in the project.
+
+=> To automate configuration management we have several tools
+
+			1) Puppet
+			2) Chef
+			3) Ansible  (Trending)
+
+================
+What is Ansible
+================
+
+-> It is an open source software developed by Michael DeHaan and its ownership is under RedHat.
+
+=> Ansible was written in Python language
+
+-> Ansible is an open source IT Configuration Management, Deployment & Orchestration tool.
+
+-> Ansible is an automation tool that provides a way to define configuration as code.
+
+-> Ansible uses playbooks to automate deploy, manage, build, test and configure anything.
+
+
+=======================
+What Ansible can do ?
+=======================
+
+1) Configuration Management
+2) App Deployment
+3) Continous Delivery
+
+=======================
+Ansible Architecture
+=======================
+
+1) Controlling Node
+
+2) Managed Nodes
+
+3) Host Inventory File
+
+4) Playbooks
+
+
+=> The machine which contains ansible software is called as Controlling Node.
+
+=> The machines which are managing by Controlling Node are called as Managed Nodes.
+
+=> Host inventory file contains managed nodes information.
+
+=> Playbook is a YML/YAML which contains set of taks.
+
+
+===============
+Ansible Setup
+===============
+
+URL : https://github.com/ashokitschool/DevOps-Documents/blob/main/11-Ansible-Setup.md
+
+
+===========================
+Ansible Ad-Hoc Commands
+===========================
+
+=> To run ad-hoc commands we will follow below syntax
+
+
+Syntax : ansible [all/group-name/host-name/ip] -m <module> -a <args>
+
+=> We have several modules in ansible to perform configuration management
+
+		1) ping
+		2) shell
+		3) yum
+		4) service
+		5) copy
+
+
+==============
+ping module
+==============
+
+$ ansible all -m ping
+
+===============
+shell module
+===============
+
+$ ansible all -m shell -a date
+
+$ ansible all -m shell -a uptime
+
+===========
+YUM Module
+===========
+
+$ ansible webservers -b -m yum -a "name=git"
+
+$ ansible webservers -b -m yum -a "name=httpd"
+
+
+===================
+Ansible Playbooks
+===================
+
+=> Playbook is a YAML file
+
+=> Playbook contains one or more tasks
+
+=> Using playbook we can define what tasks to performed and where to be performed.
+
+
+Note: To write Ansible playbooks, we should learn YAML first.
+
+
+=======
+YAML
+=======
+
+=> YML/YAML stands for Yet another markup language
+
+=> It is used to store the data in human & machine readable format
+
+=> YML/YAML files will have extension as .yml
+
+-> Official Website :  https://yaml.org/
+
+
+======================
+Sample YML file data
+======================
+
+id: 101
+name: Ashok
+gender: Male
+hobbies:
+	- music
+	- chess
+	- cricket
+
+==========================
+Sample YML File data
+=========================
+
+person:
+ id: 101
+ name: Ashok
+ address:
+  city: Hyd
+  state: TG
+  country: India
+ hobbies:
+  - cricket
+  - chess
+  - music
+
+
+Note: indent spaces are very important in yml files.
+
+==============================================================================
+
+Write YML file to represent employee data with company and job details.
+
+emp -> id, name, company and job
+
+company -> name
+
+job -> exp, type (permanent | contract)
+
+==============================================================================
+Website To validate YML syntax : https://www.yamllint.com/
+==============================================================================
+
+
+==================
+Writing Playbooks
+==================
+
+=> Playbook contains 3 sections
+
+1) Host Section
+
+2) Variable Section
+
+3) Task section
+
+=> Host Section Represents target machines to execute tasks. This configuration dependes on Ansible Inventory file.
+
+=> Variables section is used to declare variables required for playbook execution.
+
+=> Tasks section is used to define what operations we want to perform using Ansible.
+
+=> To execute the playbook we will use below command
+
+	$ ansible-playbook <playbook-yml-file-name>
+
+
+=================================
+Playbook to ping managed nodes
+=================================
+
+---
+- hosts: all
+  tasks:
+  - name: Ping all managed nodes
+    ping:
+    remote_user: ansible
+...
+
+
+# Run the playbook Using below command
+$ ansible-playbook <<Playbbok file name>>
+
+# It will run the playbook.yml playbook in verbose
+
+$ ansible-playbook playbook.yml -v
+$ ansible-playbook playbook.yml -vv
+$ ansible-playbook playbook.yml -vvv
+
+# It will check the syntax of a playbook
+$ ansible-playbook playbook.yml --syntax-check
+
+# It will display which hosts would be effected by a playbook before run
+$ ansible-playbook playbook.yml --list-hosts
+
+# It execute one-step-at-a-time, confirm each task before running with (N)o/(y)es/(c)ontinue
+$ ansible-playbook playbook.yml --step
+
+# It will do in dry run.
+$ ansible-playbook playbook.yml --check
+
+===========================
+Playbook to create file
+===========================
+
+---
+- hosts: all
+  tasks: 
+  - name: create file in all managed nodes
+    file: 
+     path: /home/ansible/f1.txt
+     state: touch
+...
+
+====================================
+Playbook to install git client
+====================================
+
+---
+- hosts: all
+  become: true
+  tasks:
+  - name: install git client
+    yum:
+     name: git
+     state: latest
+...
+
+
+===============================================================================
+Assignement : Host static website in webservers group using ansible playbook
+===============================================================================
+
+---
+- hosts: webservers
+  become: true
+  tasks:
+  - name: install httpd package
+    yum:
+     name: httpd 
+     state: latest
+  - name: copy index.html file
+    copy:
+     src: index.html
+     dest: /var/www/html/index.html
+  - name: start httpd server
+    service:
+     name: httpd
+     state: started
+...
+
+===========
+Variables
+===========
+
+=> Variables are used to store the data
+
+  Ex: id=100
+      name=ashok
+      age=20
+      gender=male
+
+=> We can use variables in 4 ways  
+
+    1) Runtime Variables
+
+    2) Playbook Variables
+
+    3) Group Variables
+
+    4) Host Variables
+
+==================
+Runtime Variables 
+==================
+
+=> We can pass variable value in runtime like below
+
+$ ansible-playbook <yml> --extra-vars package_name=httpd
+
+---
+- hosts: webservers
+  become: true
+  tasks:
+  - name: install httpd package
+    yum:
+     name: "{{package_name}}"
+     state: latest
+  - name: copy index.html file
+    copy:
+     src: index.html
+     dest: /var/www/html/index.html
+  - name: start httpd server
+    service:
+     name: "{{package_name}}"
+     state: started
+...
+
+
+==================
+Playbook Variables 
+==================
+
+=> We can declare variables with in the playbook
+
+---
+- hosts: webservers
+  become: true
+  vars:
+   package_name: httpd
+  tasks:
+  - name: install httpd package
+    yum:
+     name: "{{package_name}}"
+     state: latest
+  - name: copy index.html file
+    copy:
+     src: index.html
+     dest: /var/www/html/index.html
+  - name: start httpd server
+    service:
+     name: "{{package_name}}"
+     state: started
+...
+
+=========================================================================
+
+Requirement : Write ansible playbook to install below softwares
+
+webservers group : java
+
+dbservers group : mysql
+
+=========================================================================
+---
+- hosts: all
+  become: true
+  tasks:
+  - name: install soft
+    yum:
+     name: "{{package_name}}"
+     state: latest
+...
+
+=> To achieve above requirement we need to use group vars concept
+
+============
+Group Vars
+============
+
+-> group vars files should be created at host inventory location 
+
+Host Inventory : /etc/ansible/hosts
+
+
+Ex: 
+
+$ mkdir /etc/ansible/group_vars
+
+$ sudo vi /etc/ansible/group_vars/webservers.yml
+
+package_name: java
+
+$ sudo vi /etc/ansible/group_vars/dbservers.yml
+
+package_name: mysql
+
+=============
+Host vars
+=============
+
+-> Server specific variables
+
+-> In one group we can have multiple servers 
+
+-> For every host if we want seperate variables then we should go for host vars
+
+
+
+$ mkdir /etc/ansible/host_vars
+
+-> create a file with host name or ip 
+
+$ vi /etc/ansible/host_vars/172.138.1.1.yml
+
+
+====================
+Handlers and Tags
+====================
+
+-> In playbook all tasks will be executed by default in sequential order.
+
+=> Using Handlers we can execute tasks based on other tasks status
+
+Note: If 2nd task status is changed then only execute 3rd task.
+
+-> Handlers are used to notify the tasks to execute.
+
+=> 'notify' keyword we will use to inform handler to execute
+
+
+-> Using Tag we can map task to a tag-name
+
+-> Using tag name we can execute particular task and we can skip particular task also.
+
+
+---
+- hosts: all
+  become: true
+  vars:
+   package_name: httpd
+  tasks:
+   - name: install httpd
+     yum:
+      name: "{{package_name}}"
+      state: present
+     tags:
+      - install
+   - name: copy index.html
+     copy:
+      src: index.html
+      dest: /var/www/html/index.html
+     tags:
+      - copy
+     notify: 
+      start httpd server
+  handlers:
+    - name: start httpd server
+      service: 
+       name: "{{package_name}}"
+       state: started
+...
+
+
+# to display all tags available in playbook
+$ ansible-playbook handlers_tags.yml --list-tags
+
+# Execute a task whose tag name is install
+$ ansible-playbook handlers_tags.yml --tags "install"
+
+# Execute the tasks whose tags names are install and copy
+$ ansible-playbook handlers_tags.yml --tags "install,copy"
+
+# Execute all the tasks in playbook by skipping install task
+$ ansible-playbook handlers_tags.yml --skip-tags "install,copy"
+
+
+===============
+Ansible Vault
+===============
+
+=> It is used to secure our playbooks
+
+=> Using Ansible vault concept, we can encrypt & decrypt our playbooks
+
+
+  Encryption : Convert data from readable format to un-readable format
+
+  DeCryption : Convert data from un-readable format to readable format
+
+=========================
+Ansible Vault Commands
+=========================
+
+$ ansible-vault encrypt <playbook-yml> : To encrypt our yml
+
+$ ansible-vault view <playbook-yml> : To see original data from encrypted file
+
+$ ansible-vault edit <playbook-yml> : To edit data in original format
+
+$ ansible-vault decrypt <playbook-yml> : To decrypt our yml
+
+
+-> To encrypt a playbook we need to set one vault password
+
+-> while executing playbook we need to pass vault password
+
+$ ansible-playbook <filename>.yml --ask-vault-pass
+
+
+================
+Ansible Roles
+================
+
+-> As you add more and more functionality to your playbooks, they can become difficult to manage & maintain.
+
+-> Roles allow you to break down a complex playbook into separate, smaller chunks that can be co-ordinated by a central entry point.
+
+-> Roles are a level of abstraction for Ansible configuration in a modular and reusable format.
+
