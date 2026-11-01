@@ -1,4 +1,3 @@
-dme
 pipeline {
     agent any
 
