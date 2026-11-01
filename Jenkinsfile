@@ -1,4 +1,4 @@
-
+dme
 pipeline {
     agent any
 
@@ -31,7 +31,7 @@ pipeline {
                 echo 'Running Tests'
 
                 sh '''
-                    test -f README.md
+                    test -f readme.md
                     echo "README file exists"
                     echo "All tests passed"
                 '''
