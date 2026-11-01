@@ -30,7 +30,7 @@ pipeline {
                 echo 'Running Tests'
 
                 sh '''
-                    test -f readme.md
+                    test -f readme
                     echo "README file exists"
                     echo "All tests passed"
                 '''
