@@ -2,94 +2,74 @@
 pipeline {
     agent any
 
-    parameters {
-        choice(
-            name: 'ENVIRONMENT',
-            choices: ['dev', 'staging', 'production'],
-            description: 'Select deployment environment'
-        )
-
-        string(
-            name: 'APP_VERSION',
-            defaultValue: '1.0.0',
-            description: 'Application version'
-        )
-    }
-
     environment {
-        APP_NAME = 'my-devops-app'
+        IMAGE_NAME = 'utkarsh830devops/devops-roadmap'
     }
 
     stages {
 
         stage('Checkout') {
             steps {
-                echo 'Checking out source code'
                 checkout scm
-            }
-        }
-
-        stage('Build') {
-            steps {
-                echo "Building ${APP_NAME}"
-
-                sh '''
-                    echo "Application: $APP_NAME"
-                    echo "Version: $APP_VERSION"
-                    echo "Environment: $ENVIRONMENT"
-                '''
+                echo 'Source code downloaded'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Running tests'
-
                 sh '''
                     test -f readme
-                    echo "Tests passed"
+                    test -f Dockerfile
+                    echo "Source validation successful"
                 '''
             }
         }
 
-        stage('Parallel Checks') {
-            parallel {
-
-                stage('Code Check') {
-                    steps {
-                        echo 'Running code checks'
-                        sh 'echo Code check completed'
-                    }
-                }
-
-                stage('Security Check') {
-                    steps {
-                        echo 'Running security checks'
-                        sh 'echo Security check completed'
-                    }
-                }
+        stage('Docker Build') {
+            steps {
+                sh '''
+                    docker build \
+                    -t ${IMAGE_NAME}:${BUILD_NUMBER} \
+                    -t ${IMAGE_NAME}:latest .
+                '''
             }
         }
 
-        stage('Deploy') {
+        stage('Docker Login and Push') {
             steps {
-                echo "Deploying to ${params.ENVIRONMENT}"
-                echo "Version: ${params.APP_VERSION}"
+                withCredentials([
+                    usernamePassword(
+                        credentialsId: 'dockerhub-creds',
+                        usernameVariable: 'DOCKER_USER',
+                        passwordVariable: 'DOCKER_TOKEN'
+                    )
+                ]) {
+                    sh '''
+                        set +x
+                        echo "$DOCKER_TOKEN" | docker login \
+                        -u "$DOCKER_USER" --password-stdin
+
+                        docker push ${IMAGE_NAME}:${BUILD_NUMBER}
+                        docker push ${IMAGE_NAME}:latest
+
+                        docker logout
+                    '''
+                }
             }
         }
     }
 
     post {
         success {
-            echo 'Pipeline completed successfully!'
+            echo 'Docker image pushed successfully!'
         }
 
         failure {
-            echo 'Pipeline failed!'
+            echo 'Docker CI/CD pipeline failed!'
         }
 
         always {
-            echo 'Pipeline execution finished.'
+            echo 'Pipeline execution completed'
         }
     }
 }
